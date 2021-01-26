@@ -1,39 +1,39 @@
 
 var openingHours = { 
-  monday: [ 
+  "monday": [ 
   { "begin": "10:00", "end": "12:00" }, 
   { "begin": "13:00", "end": "18:00" },
   ], 
-  tuesday: [ 
+  "tuesday": [ 
   { "begin": "10:00", "end": "12:00" }, 
   { "begin": "13:00", "end": "18:00" }, 
   ], 
-  wednesday: [ 
+  "wednesday": [ 
   { "begin": "10:00", "end": "12:00" }, 
   { "begin": "13:00", "end": "18:00" }, 
   ], 
-  thursday: [ 
+  "thursday": [ 
   { "begin": "10:00", "end": "12:00" }, 
   { "begin": "13:00", "end": "18:00" }, 
   ], 
-  friday: [], 
-  saturaday: [], 
-  sunday: [], 
+  "friday": [], 
+  "saturaday": [], 
+  "sunday": []
 } 
 
 // days to which we want to add opening hours
 const daysSelected = { 
-  monday: true, 
-  tuesday: true, 
-  wednesday: true, 
-  thursday: true, 
-  friday: false, 
-  saturday: false, 
-  sunday: true, 
+  "monday": true, 
+  "tuesday": true, 
+  "wednesday": true, 
+  "thursday": true, 
+  "friday": false, 
+  "saturday": false, 
+  "sunday": true 
   } 
 
 //hours to add to days previously selected
-const hoursToAdd = { begin: "19:00", end: "23:00" }   
+const hoursToAdd = { "begin": "19:00", "end": "23:00" }   
 
 /** 
  * addOpeningHours method:
