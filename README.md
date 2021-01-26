@@ -84,8 +84,8 @@ On veut calculer le nombre N de petits cubes à la périphérie du grand cube. (
 Ecrivez un programme qui permette de calculer ce nombre. 
 ## Problème 3 : 
 Ecrivez un programme qui permette d’imprimer la suite suivante : 
-1 
-2 3 
-4 5 6 
-7 8 9 10 
+1  <br />
+2 3  <br />
+4 5 6  <br />
+7 8 9 10  <br />
 …
