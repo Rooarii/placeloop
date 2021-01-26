@@ -1,4 +1,13 @@
-# Problème 1 : 
+# Set up
+
+Pour ce test il faut node installer sur votre machine afin de lancer les fichiers Javascript
+### Steps:
+1. télécharger [node.js](http://github.com)
+2. suivre les instructions dans le lien suivant: [how to install node](https://linuxize.com/post/how-to-install-node-js-on-ubuntu-20-04/)
+
+# Test
+
+## Problème 1 : 
 On veut écrire un programme qui permette de renseigner les horaires d’ouverture d’un établissement. Les  horaires sont stokés sous la formes suivante : 
 ```json
 var openingHours = { 
@@ -69,11 +78,11 @@ Exemple de collision :
 }
 ```
 
-# Problème 2 : 
+## Problème 2 : 
 Nous avons un cube composé de petits cubes (ex : un rubiks cube). Soit n le nombre de petits cubes dans une arrête du gran cube. (ex: pour un rubiks cube classique n = 3). 
 On veut calculer le nombre N de petits cubes à la périphérie du grand cube. (ex pour n = 2, N = 8). 
 Ecrivez un programme qui permette de calculer ce nombre. 
-# Problème 3 : 
+## Problème 3 : 
 Ecrivez un programme qui permette d’imprimer la suite suivante : 
 1 
 2 3 
