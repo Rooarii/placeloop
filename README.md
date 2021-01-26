@@ -12,20 +12,20 @@ On veut écrire un programme qui permette de renseigner les horaires d’ouvertu
 ```json
 var openingHours = { 
     "monday": [ 
-        { "begin": “10:00”, "end": “12:00” }, 
-        { "begin": “13:00”, "end": “18:00” }, 
+        { "begin": "10:00", "end": "12:00" }, 
+        { "begin": "13:00", "end": "18:00" }, 
     ], 
     "tuesday": [ 
-        { "begin": “10:00”, "end": “12:00” }, 
-        { "begin": “13:00”, "end": “18:00” }, 
+        { "begin": "10:00", "end": "12:00" }, 
+        { "begin": "13:00", "end": "18:00" }, 
     ], 
     "wednesday": [ 
-        { "begin": “10:00”, "end": “12:00” }, 
-        { "begin": “13:00”, "end": “18:00” }, 
+        { "begin": "10:00", "end": "12:00" }, 
+        { "begin": "13:00", "end": "18:00" }, 
     ], 
     "thursday": [ 
-        { "begin": “10:00”, "end": “12:00” }, 
-        { "begin": “13:00”, "end": “18:00” }, 
+        { "begin": "10:00", "end": "12:00" }, 
+        { "begin": "13:00", "end": "18:00" }, 
     ], 
     "friday": [], 
     "saturaday": [], 
@@ -52,7 +52,7 @@ et
 
 ```json
 var hoursToAdd = { 
-  "begin": “19:00”, "end": “23:00” 
+  "begin": "19:00", "end": "23:00" 
 } 
 
 ```
@@ -65,16 +65,16 @@ Exemple de collision :
 
 ```json
 { 
-  "begin": “10:00”,
-  "end": “12:00”
+  "begin": "10:00",
+  "end": "12:00"
 } 
 ```
 
  n’est pas compatible avec 
 ```json
 {
-  "begin": “11:00”,
-  "end":  “13:00” 
+  "begin": "11:00",
+  "end":  "13:00" 
 }
 ```
 
