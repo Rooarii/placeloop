@@ -90,3 +90,47 @@ Ecrivez un programme qui permette d’imprimer la suite suivante :
 4 5 6  <br />
 7 8 9 10  <br />
 …
+<br />
+
+Pour ce problème j'ai fait une ébauche en node. étant donné que c'est 2 boucles for c'est normal que j'obtienne le résultat suivant<br />
+
+```
+1
+
+2
+3
+
+4
+5
+6
+
+7
+8
+9
+10
+
+11
+12
+13
+14
+15
+
+16
+17
+18
+19
+20
+21
+```
+<br />
+
+J'ai ensuite refait la solution en html et js ce qui permet l'affichage demandé:
+```
+1
+2 3
+4 5 6
+7 8 9 10
+11 12 13 14 15
+16 17 18 19 20 21 
+```
+
