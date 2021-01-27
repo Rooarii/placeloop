@@ -9,9 +9,28 @@ body{
 }
 
 h1{
-  color: #00ACA9;
+  color: #9BA1A5
 }
 
 h2{
-  color: #9BA1A5
+  
+  color: #00ACA9;
+}
+
+.code{
+  background-color: #eee;
+  display: block;
+  padding: 20px;
+  white-space:pre-line;
+}
+
+@media only screen and (max-width: 600px) {
+  body{
+    width: 90vw;
+    margin: auto;
+    font-size: 2vh;
+  }
+  .code{
+    white-space: break-spaces;
+  }
 }

@@ -9,8 +9,117 @@
     src="https://placeloop.com/wp-content/themes/placeloop/assets/img/logo-placeloop.svg" alt="Placeloop"
   >
   </br>
-  <h1>Problème 3:</h1>
-  <h2>Résultat:</h2>
+  <h1>Test: Rooarii MANUEL</h1>
+  <h2>Problème 1</h2>
+  <h3>Code</h3>
+  <xmp class="code">
+
+    var openingHours = { 
+      "monday": [ 
+      { "begin": "10:00", "end": "12:00" }, 
+      { "begin": "13:00", "end": "18:00" },
+      ], 
+      "tuesday": [ 
+      { "begin": "10:00", "end": "12:00" }, 
+      { "begin": "13:00", "end": "18:00" }, 
+      ], 
+      "wednesday": [ 
+      { "begin": "10:00", "end": "12:00" }, 
+      { "begin": "13:00", "end": "18:00" }, 
+      ], 
+      "thursday": [ 
+      { "begin": "10:00", "end": "12:00" }, 
+      { "begin": "13:00", "end": "18:00" }, 
+      ], 
+      "friday": [], 
+      "saturaday": [], 
+      "sunday": []
+    } 
+
+    // days to which we want to add opening hours
+    const daysSelected = { 
+      "monday": true, 
+      "tuesday": true, 
+      "wednesday": true, 
+      "thursday": true, 
+      "friday": false, 
+      "saturday": false, 
+      "sunday": true 
+      } 
+
+    //hours to add to days previously selected
+    const hoursToAdd = { "begin": "19:00", "end": "23:00" }   
+
+    /** 
+    * addOpeningHours method:
+    * ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+    * it allows to add the hours from (object: hoursToAdd) to the selected days (object: daysSelected) in openingHours 
+    * 
+    * Step 1: 
+    *   - check which days have been selected to add new opening hours
+    * Step 2: 
+    * 
+    *   - for each days selected (truthy) we add the new opening hours
+    * Step 3:
+    * 
+    * We return the final result openingHours object.
+    */
+    const addOpeningHours = (daysSelected,hoursToAdd )=>{
+      
+      for (const day in daysSelected){
+        if(daysSelected[day]){
+          openingHours[day].push(hoursToAdd)
+        }
+      }
+      // console.log(openingHours)
+      return openingHours
+
+      }
+    //_____________________________________________________//
+    // Display returned result from addOpeningHours method
+
+    console.log(addOpeningHours(daysSelected, hoursToAdd));
+    // console.log(addOpeningHours());
+
+    /**
+    * Enhancements:
+    *  - Enhancement 1: to be done 🚧
+    *  - Enhancement 2: to be done 🚧
+    */ 
+  </xmp>
+  <h2>Problème 2</h2>
+  <h3>Code</h3>
+  <xmp class="code">
+        /**
+    * Problème 2 : 
+    * Nous avons un cube composé de petits cubes (ex : un rubiks cube). Soit n le nombre de petits cubes dans une arrête du gran cube. (ex: pour un rubiks cube classique n = 3). 
+    * On veut calculer le nombre N de petits cubes à la périphérie du grand cube. (ex pour n = 2, N = 8). 
+    * Ecrivez un programme qui permette de calculer ce nombre. 
+    * 
+    */
+
+    // Step 1:
+    // we have to store the numbers of cubes per edge
+    const n = 3;
+
+    // Step 2:
+    /**
+      * we have to calculate the numbers of cubes per edge.
+      * ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+      * to do so, we calculate the numbers of n cube per face. we will call it nf
+      *   nf = n²
+      * as on edge has 2 and only 2 faces of the cube 
+      *   N = 2* nf 
+      * 
+      *  */ 
+
+      // Function that performs Step 2
+      const calculateCubesNumberPerEdge = (n) =>(2*(Math.pow(n,2)))
+
+    console.log(`RESULT : N = ${calculateCubesNumberPerEdge(4)} cubes / edge`);
+  </xmp>
+  <h2>Problème 3</h2>
+  <h3>Résultat:</h3>
 </body>
 <script type="text/javascript" src="script.js"></script>
 </html>
