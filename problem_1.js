@@ -63,6 +63,7 @@ const addOpeningHours = (daysSelected,hoursToAdd )=>{
 
   }
 
+// function that allows to sort the hours per choosen instance
 function dynamicSort(property) {
   var sortOrder = 1;
   if(property[0] === "-") {
@@ -86,6 +87,6 @@ console.log(addOpeningHours(daysSelected, hoursToAdd));
 
 /**
  * Enhancements:
- *  - Enhancement 1: to be done 🚧
+ *  - Enhancement 1: Done ✅
  *  - Enhancement 2: to be done 🚧
  */ 
